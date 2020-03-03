@@ -7,12 +7,12 @@
 |column|Type|Options|
 |------|----|-------|
 |email|string|null: false|
-|password|string|null:false|
+|password|string|null: false|
 |nickname|string|null: false|
 
 ### Association
 - has_many :messages 
-- has_many  :groups,  through:  :group_users
+- has_many :groups,  through:  :group_users
 
 ## messagesテーブル
 
@@ -36,7 +36,7 @@
 ### Association
 - belongs_to :user
 - has_many  :messages
-- has_many,  through: :group_users
+- has_many, through: :group_users
 
 ## group_usersテーブル
 |column|Type|Options|
