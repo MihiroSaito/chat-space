@@ -3,7 +3,6 @@
 # chat-space DB設計
 
 ## userテーブル
-
 |column|Type|Options|
 |------|----|-------|
 |email|string|null: false|
@@ -13,9 +12,9 @@
 ### Association
 - has_many :messages 
 - has_many  :groups,  through:  :group_users
+- belongs_to :groups
 
 ## messagesテーブル
-
 |column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
@@ -28,7 +27,6 @@
 - belongs_to :user
 
 ## groupsテーブル
-
 |column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
@@ -36,7 +34,7 @@
 ### Association
 - belongs_to :user
 - has_many :messages
-- has_many :user, through:  :group_user
+- has_many :user, through:  :group_users
 
 ## group_usersテーブル
 |column|Type|Options|
@@ -46,4 +44,4 @@
 
 ### Association
 - belongs_to :user
-- belongs_to :group
+- belongs_to :groups
