@@ -19,7 +19,7 @@
 |column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
-|image|string|null: false|
+|image|string|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
@@ -31,12 +31,12 @@
 
 |column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
+|name|string|null: false|
 
 ### Association
 - belongs_to :user
 - has_many :messages
-- has_many :group_users
+- has_many :user, through:  :group_user
 
 ## group_usersテーブル
 |column|Type|Options|
