@@ -1,11 +1,11 @@
 .side-box
   .side-box__header
-    %p.side-box__header__left--box
-      masa
+    %h3.side-box__header__left--box
+      = current_user.name
     .side-box__header__right--box
       = link_to "#" do
         = icon('far', 'edit', class: "edit")
-      = link_to "#" do
+      = link_to edit_user_path(current_user) do
         = icon('fas', 'cog', class: "cog")
   .side-box__group
     %p.side-box__group__text
