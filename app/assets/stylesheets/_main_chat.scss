@@ -1,0 +1,147 @@
+$color-lightblue: #38aef0;
+
+.main-box {
+  height: 100vh;
+  width: calc(100vw - 300px);
+  background-color: #fafafa;
+  float: right;
+
+  &__header {
+    height: 100px;
+    width: calc(100vw - 300px);
+    background-color: #ffffff;
+    border-bottom: 1px solid#eeeeee;
+    position: relative;
+
+    &__text {
+      font-size: 20px;
+      color: #333333;
+      margin-left: 40px;
+      padding-top: 35px;
+    }
+
+    &__text2 {
+      font-size: 12px;
+      color: #999999;
+      margin-left: 40px;
+      margin-top: 15px;
+    }
+
+    &__btn {
+      height: 40px;
+      width: 73px;
+      border: 1px solid $color-lightblue;
+      right: 40px;
+      top: 30px;
+      position: absolute;
+      color: $color-lightblue;
+      line-height: 40px;
+      text-align: center;
+    }
+  } 
+
+  &__center {
+    height: calc(100vh - 190px);
+    width: calc(100vw - 300px);
+    background-color: #fafafa;
+
+    &__message {
+      display: flex;
+      padding-top: 35px;
+      margin-left: 40px;
+      margin-bottom: 12px;
+    
+      &__name {
+        font-size: 16px;
+        color: #333333;
+      }
+
+      &__date {
+        font-size: 12px;
+        color: #999999;
+        padding-left: 10px;
+      }
+    }
+
+    &__text {
+        font-size: 14px;
+        color: #434a54;
+        margin-left: 40px;
+        margin-bottom: 46px;
+    }
+
+    &__message2 {
+      display: flex;
+      padding-top: 11px;
+      margin-left: 40px;
+      margin-bottom: 12px;
+    
+      &__name2 {
+        font-size: 16px;
+        color: #333333;
+      }
+
+      &__date2 {
+        font-size: 12px;
+        color: #999999;
+        padding-left: 10px;
+      }
+    }
+
+    &__text2 {
+        font-size: 14px;
+        color: #434a54;
+        margin-left: 40px;
+        margin-bottom: 46px;
+    }
+
+  }
+
+  &__bottom {
+    height: 90px;
+    width: calc(100vw - 300px);
+    background-color: #d2d2d2;
+    position: relative;
+    
+
+    &__message--form {
+      background-color: white;
+      height: 50px;
+      width: 945px;
+      position: absolute;
+      top: 20px;
+      left: 40px;
+      color: gray;
+      line-height: 50px;
+      padding-left: 10px;
+      float: left;
+      
+
+      .input-box__image {
+        height: 40px;
+        width: 50px;
+        float: right;
+        color: #333333;
+        text-align: center;
+        font-size: 1.5em;
+      }
+      
+      .file {
+        display: none;
+      }
+    }
+
+    &__btn {
+      background-color: $color-lightblue;
+      height: 49px;
+      width: 98px;
+      float: right;
+      position: absolute;
+      right: 41px;
+      top: 21px;
+      color: white;
+      line-height: 49px;
+      text-align: center;
+    }
+  }
+}

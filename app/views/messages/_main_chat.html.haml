@@ -1,0 +1,32 @@
+.main-box
+  .main-box__header
+    %p.main-box__header__text
+      test
+    %p.main-box__header__text2
+      Member : masa
+    .main-box__header__btn
+      Edit
+  .main-box__center
+    .main-box__center__message
+      %p.main-box__center__message__name
+        masa
+      %p.main-box__center__message__date
+        2019/11/20(Wed)17:43:01
+    %p.main-box__center__text
+      おはよう!
+    .main-box__center__message2
+      %p.main-box__center__message2__name2
+        masa
+      %p.main-box__center__message2__date2
+        2019/11/20(Wed)17:43:34
+    %p.main-box__center__text2
+      今日は夜から雨
+  .main-box__bottom
+    .main-box__bottom__message--form
+      type a message
+      %label{class: "input-box__image"}
+        = icon('far', 'image')
+        %input{type: "file", class: "file"}
+    .main-box__bottom__btn
+      Send
+      
