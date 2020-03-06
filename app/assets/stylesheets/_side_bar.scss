@@ -49,25 +49,33 @@
   }
     
 
-  &__group {
+  &__groups {
     height: calc(100vh - 100px);
     width: 300px;
     background-color: #2f3e51;
+    overflow: scroll;
 
-    &__text {
-    font-size: 15px;
-    color: #ffffff;
-    font-style: bold;
-    padding-top: 20px;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    }
+    .side-box__group {
+      a{
+        text-decoration: none;
+      }
+      &__text {
+        font-size: 15px;
+        color: #ffffff;
+        font-style: bold;
+        padding-top: 20px;
+        margin-bottom: 5px;
+        margin-left: 20px;
 
-    &__text2 {
-      font-size: 11px;
-      color: #ffffff;
-      font-style: bold;
-      margin-left: 20px;
+      }
+
+      &__text2 {
+        font-size: 11px;
+        color: #ffffff;
+        font-style: bold;
+        margin-left: 20px;
+        margin-bottom: 40px;
+      }
     }
   }
 }

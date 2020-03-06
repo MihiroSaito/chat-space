@@ -46,17 +46,18 @@ $color-lightblue: #38aef0;
   } 
 
   &__center {
-    height: calc(100vh - 190px);
-    width: calc(100vw - 300px);
+    height: calc(100% - 190px);
+    width: 100%;
     background-color: #fafafa;
+    overflow: scroll;
 
-    &__message {
-      display: flex;
+    .upper-message {
       padding-top: 35px;
       margin-left: 40px;
       margin-bottom: 12px;
+      display: flex;
     
-      &__name {
+      &__user-name {
         font-size: 16px;
         color: #333333;
       }
@@ -68,7 +69,7 @@ $color-lightblue: #38aef0;
       }
     }
 
-    &__text {
+    .lower-message {
         font-size: 14px;
         color: #434a54;
         margin-left: 40px;
@@ -104,7 +105,7 @@ $color-lightblue: #38aef0;
 
   &__bottom {
     height: 90px;
-    width: calc(100vw - 300px);
+    width: 100%;
     background-color: #d2d2d2;
     position: relative;
     
@@ -120,20 +121,23 @@ $color-lightblue: #38aef0;
       line-height: 50px;
       padding-left: 10px;
       float: left;
+      position: relative;
+    }
+    
+    .form__mask {
       
-
       .input-box__image {
         height: 40px;
         width: 50px;
         float: right;
         color: #333333;
-        text-align: center;
+        top: 25px;
         font-size: 1.5em;
+        position: absolute;
       }
-      
-      .file {
-        display: none;
-      }
+        .file {
+          display: none;
+        }
     }
 
     &__btn {
@@ -143,7 +147,7 @@ $color-lightblue: #38aef0;
       float: right;
       position: absolute;
       right: 41px;
-      top: 21px;
+      top: 20px;
       color: white;
       line-height: 49px;
       text-align: center;
