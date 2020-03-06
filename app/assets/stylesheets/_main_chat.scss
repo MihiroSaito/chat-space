@@ -37,6 +37,11 @@ $color-lightblue: #38aef0;
       color: $color-lightblue;
       line-height: 40px;
       text-align: center;
+
+      .edit {
+        text-decoration: none;
+        color: $color-lightblue;
+      }
     }
   } 
 
