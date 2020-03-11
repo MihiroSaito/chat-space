@@ -113,7 +113,7 @@ $color-lightblue: #38aef0;
     &__message--form {
       background-color: white;
       height: 50px;
-      width: 945px;
+      width: calc(100% - 200px);
       position: absolute;
       top: 20px;
       left: 40px;
