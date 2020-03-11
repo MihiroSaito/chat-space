@@ -7,6 +7,7 @@ $(function() {
       </div>
     `;
     $("#user-search-result").append(html);
+
   }
 
   function addNoUser() {
