@@ -22,7 +22,7 @@ Devise.setup do |config|
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
-  config.secret_key = 'e602587f34f7f4fa90b8859d145f2cac175637ad3ff1fb45950fc48ddbffaa2a02839d21f4a4bd3491f60f0e0883c3f21e4d755f34dc68edf1c3137be835945c'
+ 
   # Configure the parent class responsible to send e-mails.
   # config.parent_mailer = 'ActionMailer::Base'
 
